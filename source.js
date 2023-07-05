@@ -235,7 +235,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font>.<br/> 时请按<b>E</b>键。' +
 				'出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font>.<br/> 时请按<b>I</b>键。' +
-				'每个词语或图像只会属于其中一个类别。<br/><br/>' +
+				'每次出现的词语或图像只会属于其中一个类别。<br/><br/>' +
 				'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。 ' +
 				'按任意键以继续。<br/>' + 
 				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>' +
@@ -262,7 +262,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'本部分与上一部分规则相同。<br/>' +
 				'出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font> 时请按<b>E</b>键。 <br/>' +
 				'出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font> 时请按<b>I</b>键。<br/>' +
-				'每个词语或图像只会属于其中一个类别。<br/><br/>' +
+				'每次出现的词语或图像只会属于其中一个类别。<br/><br/>' +
 				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>' +
 				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instSecondCombinedTouch:[
@@ -272,12 +272,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'请将左手食指或中指悬停在左方绿色区域上，出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font> 时按下。<br/>',
+						'请将右手食指或中指悬停在右方绿色区域上，出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font> 时按下。<br/>',
 						'<br/>',
-						'<u>Go as fast as you can</u> while being accurate.<br/>',
+						'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">触摸下方绿色区域开始测试。</p>',
 				'</div>'
 			].join('\n'),
 
@@ -285,10 +285,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>请注意！类别标签的位置已改变。</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现<font color="#336600">leftCategory</font>时按键。<br/>' +
+				'请将右手食指或中指悬停在 <b>I</b> 键上方，出现<font color="#336600">rightCategory</font>时按键。<br/><br/>' +
+				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>' +
+				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
@@ -297,13 +297,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
 						'请注意！类别标签的位置已改变。<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+							'请将左手食指或中指悬停在左方绿色区域上，出现<font color="#336600">leftCategory</font>时按下。<br/>',
+							'请将右手食指或中指悬停在右方绿色区域上，出现<font color="#336600">rightCategory</font>时按下。<br/>',
+							'每次只会出现一个词语或图像需要你判断类别。',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
+							'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">触摸下方绿色区域开始测试。</p>',
 				'</div>'
 			].join('\n'),
 
