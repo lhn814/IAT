@@ -77,14 +77,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: '落后'},
-					{word: '失败'},
-					{word: '痛苦'},
-					{word: '悲伤'},
-					{word: '恐怖'},
-					{word: '愤怒'},
-					{word: '污秽'},
-					{word: '邪恶'}
+				        {word: 'awful'},
+					{word: 'failure'},
+					{word: 'agony'},
+					{word: 'hurt'},
+					{word: 'horrible'},
+					{word: 'terrible'},
+					{word: 'nasty'},
+					{word: 'evil'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -98,14 +98,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: '欢笑'},
-					{word: '愉悦'},
-					{word: '光荣'},
-					{word: '发达'},
-					{word: '美好'},
-					{word: '和平'},
-					{word: '友爱'},
-					{word: '善良'}
+					{word: 'laughter'},
+					{word: 'happy'},
+					{word: 'glorious'},
+					{word: 'joy'},
+					{word: 'wonderful'},
+					{word: 'peace'},
+					{word: 'pleasure'},
+					{word: 'love'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -156,8 +156,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fontColor : '#000000', //The default color used for printed messages.
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : '按 <b>E</b> 键选择', 
-			rightKeyText : '按 <b>I</b> 键选择', 
+			leftKeyText : '按 E 键选择', 
+			rightKeyText : '按 I 键选择', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
@@ -180,12 +180,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现以下类别的词语或图片时按键 <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现以下类别的词语或图片时按键 <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现<font color="#0000ff">leftAttribute.</font>的图片时按键。' +
+				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现<font color="#0000ff">rightAttribute</font>的图片时按键。<br/><br/>' +
 				'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。' +
 				'按任意其他键以继续。<br/>' +
-				'<u>请尽可能快地凭第一直觉做出选择</u>，但同时尽量保持准确。<br/><br/></p>'+
-				'<p align="center">按下空格键 <b>space bar</b> 开始测试。</font></p></div>',
+				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>'+
+				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -193,13 +193,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'请将左手食指或中指悬停在左方 <b>left</b> 绿色区域，出现以下类别的词语或图片时按下 <font color="#0000ff">leftAttribute</font>.<br/>',
-						'请将右手食指或中指悬停在右方 <b>right</b> 绿色区域，出现以下类别的词语或图片时按下 <font color="#0000ff">rightAttribute</font>.<br/>',
+						'请将左手食指或中指悬停在左方绿色区域，出现<font color="#0000ff">leftAttribute</font>的图片时按下。<br/>',
+						'请将右手食指或中指悬停在右方绿色区域，出现<font color="#0000ff">rightAttribute</font>的图片时按下。<br/>',
 						'每次只会出现一个词语或图像需要你判断类别。<br/>',
 						'<br/>',
-						'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一边以继续。 <u>请尽可能快地凭第一直觉做出选择</u>，但同时尽量保持准确。',
+						'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一边以继续。 <u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。',
 					'</p>',
-					'<p align="center">触摸下方 <b>lower </b> 绿色区域开始测试。</p>',
+					'<p align="center">触摸下方绿色区域开始测试。</p>',
 				'</div>'
 			].join('\n'),
 
