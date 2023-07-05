@@ -180,8 +180,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现<font color="#0000ff">leftAttribute.</font>的图片时按键。' +
-				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现<font color="#0000ff">rightAttribute</font>的图片时按键。<br/><br/>' +
+				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现<font color="#0000ff">leftAttribute.</font>时按键。' +
+				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现<font color="#0000ff">rightAttribute</font>时按键。<br/><br/>' +
 				'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。' +
 				'按任意其他键以继续。<br/>' +
 				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>'+
@@ -193,8 +193,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'请将左手食指或中指悬停在左方绿色区域，出现<font color="#0000ff">leftAttribute</font>的图片时按下。<br/>',
-						'请将右手食指或中指悬停在右方绿色区域，出现<font color="#0000ff">rightAttribute</font>的图片时按下。<br/>',
+						'请将左手食指或中指悬停在左方绿色区域，出现<font color="#0000ff">leftAttribute</font>时按下。<br/>',
+						'请将右手食指或中指悬停在右方绿色区域，出现<font color="#0000ff">rightAttribute</font>时按下。<br/>',
 						'每次只会出现一个词语或图像需要你判断类别。<br/>',
 						'<br/>',
 						'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一边以继续。 <u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。',
@@ -206,13 +206,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现以下类别的词语或图片时按键 <font color="#336600">leftCategory</font>. ' +
-				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现以下类别的词语或图片时按键 <font color="#336600">rightCategory</font>.<br/>' +
+				'请将左手食指或中指悬停在 <b>E</b> 键上方，出现<font color="#336600">leftCategory</font>时按键。 ' +
+				'<br/>请将右手食指或中指悬停在 <b>I</b> 键上方，出现<font color="#336600">rightCategory</font>时按键。<br/>' +
 				'每次只会出现一个词语或图像需要你判断类别。<br/><br/>' +
 				'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。 ' +
 				'按任意其他键以继续。<br/>' +
-				'<u>请尽可能快地凭第一直觉做出选择</u> 但同时尽量保持准确。<br/><br/></p>'+
-				'<p align="center">按下空格键 <b>space bar</b> 开始测试。</font></p></div>',
+				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>'+
+				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -220,26 +220,26 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'请将左手食指或中指悬停在左方 <b>left</b> 绿色区域，出现以下类别的词语或图片时按下 <font color="#336600">leftCategory</font>.<br/>',
-						'请将右手食指或中指悬停在右方 <b>right</b> 绿色区域，出现以下类别的词语或图片时按下 <font color="#336600">rightCategory</font>.<br/>',
+						'请将左手食指或中指悬停在左方绿色区域，出现<font color="#336600">leftCategory</font>时按下。<br/>',
+						'请将右手食指或中指悬停在右方绿色区域，出现<font color="#336600">rightCategory</font>时按下。<br/>',
 						'每次只会出现一个词语或图像需要你判断类别。<br/>',
 						'<br/>',
-						'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一边以继续。<u>请尽可能快地凭第一直觉做出选择</u> 但同时尽量保持准确。',
+						'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一边以继续。<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。',
 					'</p>',
-					'<p align="center">触摸下方 <b>lower </b> 绿色区域开始测试。</p>',
+					'<p align="center">触摸下方绿色区域开始测试。</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'出现属于 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font>.<br/>类别的词语或图像时请按<b>E</b>键' +
-				'出现属于 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font>.<br/>类别的词语或图像时请按<b>I</b>键' +
+				'出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font>.<br/> 时请按<b>E</b>键。' +
+				'出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font>.<br/> 时请按<b>I</b>键。' +
 				'每个词语或图像只会属于其中一个类别。<br/><br/>' +
 				'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。 ' +
 				'按任意键以继续。<br/>' + 
-				'<u>请尽可能快地凭第一直觉做出选择</u>，但同时尽量保持准确。<br/><br/></p>' +
-				'<p align="center">按下空格键 <b>space bar</b> 开始测试。</font></p></div>',
+				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>' +
+				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -248,11 +248,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'请将左手食指或中指悬停在左方 <b>left</b> 绿色区域上，出现属于<font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font>的词语或图像时按下。</br>',
-						'请将右手食指或中指悬停在右方 <b>right</b> 绿色区域上，出现属于<font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font>的词语或图像时按下。</br>',
-							'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一侧以继续。 <u>请尽可能快凭第一直觉地做出选择</u>，但同时尽量保持准确。</br>',
+						'请将左手食指或中指悬停在左方绿色区域上，出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font> 时按下。</br>',
+						'请将右手食指或中指悬停在右方绿色区域上，出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font> 时按下。</br>',
+							'如果你选择错误，会出现一个红色的 <font color="#ff0000"><b>X</b></font> 提示。触摸另一侧以继续。 <u>请尽可能快凭第一直觉地做出选择</u>（但同时尽量保持准确）。</br>',
 						'</p>',
-						'<p align="center">触摸下方 <b>lower </b> 绿色区域开始测试。</p>',
+						'<p align="center">触摸下方绿色区域开始测试。</p>',
 				'</div>'
 			].join('\n'),
 
@@ -260,11 +260,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'本部分与上一部分规则相同。<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'出现 <font color="#336600">leftCategory</font> 或 <font color="#0000ff">leftAttribute</font> 时请按<b>E</b>键。 <br/>' +
+				'出现 <font color="#336600">rightCategory</font> 或 <font color="#0000ff">rightAttribute</font> 时请按<b>I</b>键。<br/>' +
+				'每个词语或图像只会属于其中一个类别。<br/><br/>' +
+				'<u>请尽可能快地凭第一直觉做出选择</u>（但同时尽量保持准确）。<br/><br/></p>' +
+				'<p align="center">按下空格键开始测试。</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
