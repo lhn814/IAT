@@ -7,7 +7,7 @@ define(['pipAPI','https://lhn814.github.io/IAT/source.js'], function(APIConstruc
             '友谊', '振奋', '温柔', '健康', 
             '爱恋', '愉悦', '贡献', '快乐', 
             '完美', '珍贵', '发达', '和平', 
-            '激动', '伟大', '欢笑', '光荣', 
+            '振奋', '伟大', '欢笑', '光荣', 
             '强大', '梦幻', '可爱', '庆祝', 
             '积极', '富裕', '胜利', '壮观']);
   var negWords = API.shuffle([
