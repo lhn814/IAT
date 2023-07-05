@@ -20,9 +20,9 @@ define(['pipAPI','https://lhn814.github.io/IAT/source.js'], function(APIConstruc
   
     return iatExtension({
         category1 : {
-            name : '黑人', //Will appear in the data.
+            name : '黑人的头像', //Will appear in the data.
             title : {
-                media : {word : '黑人'}, //Name of the category presented in the task.
+                media : {word : '黑人的头像'}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
@@ -38,9 +38,9 @@ define(['pipAPI','https://lhn814.github.io/IAT/source.js'], function(APIConstruc
     		stimulusCss : {color:'#31940F','font-size':'2.3em'}
         },    
         category2 :    {
-            name : '白人', //Will appear in the data.
+            name : '白人的头像', //Will appear in the data.
             title : {
-                media : {word : '白人'}, //Name of the category presented in the task.
+                media : {word : '白人的头像'}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
