@@ -55,7 +55,7 @@ define(['pipAPI','https://lhn814.github.io/IAT/source.js'], function(APIConstruc
     		//Stimulus css (style)
     		stimulusCss : {color:'#31940F','font-size':'2.3em'}
         },
-		attribute1 :
+		attribute2 :
 		{
 			name : '负面词汇',
 			title : {
@@ -76,7 +76,7 @@ define(['pipAPI','https://lhn814.github.io/IAT/source.js'], function(APIConstruc
 			//Stimulus css
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
-		attribute2 :
+		attribute1 :
 		{
 			name : '正面词汇',
 			title : {
